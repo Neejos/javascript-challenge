@@ -33,29 +33,25 @@
               <div class="panel-heading">Filter Search</div>
               <div class="panel-body">
                 <form>
-                  <div class="form-group">
-                    <ul class="list-group" id="filters">
-                      <li class="filter list-group-item">
-                        <label for="datetime">Enter a Date</label>
-                        <input class="form-control" id="datetime" type="text" placeholder="1/10/2010">
-                      </li>
-                      <li class="filter list-group-item">
-                        <label for="City">Enter a City</label>
-                        <input class="form-control" id="City" type="text" placeholder="bonita">
-                      </li>
-                      <li class="filter list-group-item">  
-                        <label for="State">Enter a State</label>
-                        <input class="form-control" id="State" type="text" placeholder="ca">
-                        <li class="filter list-group-item">  
-                          <label for="Country">Enter a Country</label>
-                          <input class="form-control" id="Country" type="text" placeholder="ca">
-                      </li>
-                      <li class="filter list-group-item">  
-                        <label for="Shape">Enter a Shape</label>
-                        <input class="form-control" id="Shape" type="text" placeholder="ca">
-                      </li> 
-                    </ul>
-                  </div>
+                    <div class="form-group">
+                        <ul class="list-group" id="filters">
+                          <li class="filter list-group-item">
+                            <label for="datetime">Enter a Date</label>
+                            <input class="form-control" id="datetime" type="text" placeholder="1/10/2010">
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="dropdown">
+                        <button onclick="myFunction()" class="dropbtn">Filter Table</button>
+                        <div id="myDropdown" class="dropdown-content">
+                          <a href="#" id="city">City</a>
+                          <a href="#" id ="state">State</a>
+                          <a href="#" id ="country">Country</a>
+                          <a href="#" id ="shape">Shape</a>
+                          
+                        </div>
+                    </div>
+                  
                   <!-- <button id="filter-btn" type="button" class="btn btn-default">Filter Table</button> -->
                 </form>
               </div>
@@ -88,7 +84,7 @@
   </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
   <script src="static/js/data.js"></script>
-  <script src="static/js/app.js"></script>
+  <script src="static/js/him.js"></script>
 </body>
 
 </html>

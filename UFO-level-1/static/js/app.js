@@ -35,7 +35,6 @@ function runfunction(){
     console.log(dateinput);
     if (dateinput.length !== 0) {
         var filtereddata = tableData.filter((ufosighting) =>ufosighting.datetime  === dateinput );
-            console.log(filtereddata);
             tbody.html("");
             filtereddata.forEach((filteredsighting) => {   
                 console.log(filteredsighting);
